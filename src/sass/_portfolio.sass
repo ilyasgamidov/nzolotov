@@ -1,0 +1,43 @@
+.portfolio
+    img
+        width: 100%
+
+    &-tabs
+        display: flex
+        justify-content: space-around
+        text-align: center
+    &-tab
+        margin-bottom: 80px
+        width: 100%
+        font-size: 45px
+        font-weight: 700
+        color: white
+        padding: 50px 0
+        transition: all .3s
+        background: #000
+        &-active
+            background: #fff
+            color: #000
+.grid
+    display: flex
+    img
+        margin-bottom: .2em
+.grid-col
+    flex: 1
+    padding: 0 .1em
+.grid-col--2,
+.grid-col--3
+    display: none
+.text2
+    width: 100px
+    height: 100px
+    background-color: #000
+.text1
+    width: 100px
+    height: 100px
+    background-color: red
+
+@media (min-width:768px)
+    .grid-col--2
+        display: block
+

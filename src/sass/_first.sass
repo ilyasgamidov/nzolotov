@@ -1,0 +1,24 @@
+.first
+    position: relative
+    height: 800px
+    background: url("img/main-img.jpg") center center no-repeat
+    background-size: cover
+    font-size: 100px
+    font-weight: 700
+    color: rgba(255, 255, 255, .5)
+    &-first
+        position: absolute
+        bottom: 20%
+        left: 10%
+    &-second
+        position: absolute
+        bottom: 6%
+        right: 10%
+
+@media (max-width: 767px)
+    .first
+        height: 350px
+        font-size: 50px
+@media (max-width: 575px)
+    .first
+        font-size: 35px

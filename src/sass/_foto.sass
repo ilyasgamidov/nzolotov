@@ -1,0 +1,122 @@
+.foto
+    position: relative
+    height: 1080px
+    overflow: hidden
+.tabs
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    display: flex
+    justify-content: space-around
+    z-index: 1000
+.tab-item
+    text-align: center;
+    width: 100%
+    font-size: 45px
+    font-weight: 700
+    padding: 50px 0
+    transition: all .3s
+    &-active
+        background: #fff
+.tabs-content
+    position: absolute
+    top: 280px
+    left: 0
+    right: 0
+    bottom: 0
+    img
+        display: block
+        max-width: 100%
+        height: auto
+        margin: 0 auto
+
+
+#video-bg
+    position: absolute
+    filter: grayscale(.3) contrast(0.5)
+    overflow: hidden
+
+
+        
+
+.foto-form
+    display: flex
+    flex-direction: column
+    input
+        margin-bottom: 25px
+        background: rgba(255, 255, 255, .7)
+        padding: 15px 20px
+        text-align: center
+        font-weight: 700
+        border: none
+        border-bottom: 4px solid #b58f50
+        border-radius: 2px
+    .my-btn
+        color: #b58f50
+        padding: 15px 20px
+        border: 4px solid #b58f50
+        background: none
+        font-weight: 700
+        font-size: 18px
+        text-transform: uppercase
+        width: 200px
+        margin: 0 auto
+        transition: all .2
+        &:hover
+            background: #b58f50
+            color: #fff
+
+.title
+    margin-bottom: 20px
+    font-size: 26px
+    color: #ffffff
+    font-weight: 700
+.foto-text
+    margin-bottom: 15px
+    font-weight: 700
+    color: #fff
+
+.frame 
+    position: relative
+    padding-bottom: 56.25%
+    height: 0
+    margin-top: 50px
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        box-shadow: 10px 10px 30px 15px rgba(0,0,0,0.08)
+
+
+@media (max-width: 1199px)
+    .foto-nikita
+        display: none
+@media (max-width: 991px) 
+    .mt
+        margin-top: 80px 
+    .title
+        margin-top: 40px
+@media (max-width: 767px)
+    .title
+        margin-top: 40px
+        font-size: 20px
+    .tabs-content
+        top: 150px
+    .tab-item
+        padding: 25px 0
+    .foto-form
+        display: flex
+        flex-direction: column
+        input
+            padding: 10px 20px
+        .my-btn
+            padding: 10px 20px
+@media (max-width: 575px)
+    .tab-item
+        font-size: 20px
+
+     
+ 
