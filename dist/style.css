@@ -48,9 +48,7 @@
       margin-right: 15px; }
     .whatsapp-mobile .mob-phone {
       width: 25px;
-      margin-right: 15px; } }
-
-@media (max-width: 991px) {
+      margin-right: 15px; }
   .navbar-brand img {
     width: 170px; } }
 
@@ -99,7 +97,7 @@
   width: 100%;
   font-size: 45px;
   font-weight: 700;
-  padding: 50px 0;
+  padding: 30px 0;
   transition: all .3s; }
   .tab-item-active {
     background: #fff; }
@@ -162,8 +160,9 @@
 .frame {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
-  margin-top: 50px; }
+  height: 0; }
+  .frame-mt50 {
+    margin-top: 50px; }
   .frame iframe {
     position: absolute;
     top: 0;
@@ -189,18 +188,16 @@
   .tabs-content {
     top: 150px; }
   .tab-item {
-    padding: 25px 0; }
+    padding: 25px 0;
+    font-size: 20px; }
   .foto-form {
     display: flex;
     flex-direction: column; }
     .foto-form input {
-      padding: 10px 20px; }
-    .foto-form .my-btn {
       padding: 10px 20px; } }
 
-@media (max-width: 575px) {
-  .tab-item {
-    font-size: 20px; } }
+.my-btn {
+  padding: 10px 20px; }
 
 .portfolio img {
   width: 100%; }
@@ -216,7 +213,7 @@
   font-size: 45px;
   font-weight: 700;
   color: white;
-  padding: 50px 0;
+  padding: 30px 0;
   transition: all .3s;
   background: #000; }
   .portfolio-tab-active {
@@ -236,19 +233,141 @@
 .grid-col--3 {
   display: none; }
 
-.text2 {
-  width: 100px;
-  height: 100px;
-  background-color: #000; }
+.grid-item img {
+  transition: all .3s;
+  filter: grayscale(100%) contrast(100%); }
+  .grid-item img:hover {
+    filter: grayscale(0) contrast(1); }
 
-.text1 {
-  width: 100px;
-  height: 100px;
-  background-color: red; }
+.title-video {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center; }
+
+.portfolio-content-item-video {
+  margin-bottom: 100px; }
 
 @media (min-width: 768px) {
   .grid-col--2 {
     display: block; } }
+
+@media (max-width: 767px) {
+  .portfolio-tab {
+    padding: 25px 0;
+    font-size: 20px; } }
+
+.packs {
+  position: relative;
+  top: -50px; }
+  .packs .accordion {
+    width: 100%;
+    max-width: 1947px;
+    height: 580px;
+    overflow: hidden;
+    margin: 0 auto; }
+  .packs .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0; }
+  .packs .accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease; }
+  .packs .accordion ul li:nth-child(1) {
+    background-image: url("../img/pack-standart-bg.jpg"); }
+  .packs .accordion ul li:nth-child(2) {
+    background-image: url("../img/pack-premium-bg.jpg"); }
+  .packs .accordion ul li:nth-child(3) {
+    background-image: url("../img/pack-lux-bg.jpg"); }
+  .packs .accordion ul:hover li {
+    width: 24%; }
+  .packs .accordion ul:hover li:hover {
+    width: 60%; }
+
+@media screen and (max-width: 600px) {
+  .accordion {
+    height: auto; }
+  .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none; } }
+
+/* ========== content ========== */
+.packs-descr {
+  font-weight: 700;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  transition: all .2s; }
+
+.packs-descr:hover {
+  opacity: 1; }
+
+.packs-descr-border {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 550px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 3px solid #fff;
+  border-radius: 4px; }
+
+.packs-descr-border .pack-title {
+  font-weight: 700;
+  font-size: 32px; }
+
+.descr-item {
+  margin-top: 25px;
+  font-size: 30px;
+  line-height: 23px; }
+
+.descr-item span {
+  font-size: 16px; }
+
+.packs-descr-border a {
+  margin-top: 20px;
+  color: #fff;
+  text-transform: none; }
+
+.packs-descr-border .my-btn {
+  color: #fff;
+  padding: 15px 20px;
+  background: #b58f50;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px; }
+  .packs-descr-border .my-btn:hover {
+    background: #94743e; }
+
+.packs-title {
+  text-transform: uppercase;
+  font-size: 70px;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  background: #262626; }
 
 * {
   margin: 0;
