@@ -12,7 +12,7 @@ const postcss = require("gulp-postcss");
 const dist = "./dist";
 
 gulp.task("copy-html", () => {
-    return gulp.src("./src/index.html")
+    return gulp.src("./src/*.html")
                 .pipe(gulp.dest(dist))
                 .pipe(browsersync.stream());
 });
@@ -58,12 +58,17 @@ gulp.task("build-js", () => {
 
 gulp.task("watch", () => {
     browsersync.init({
-		server: "./dist/",
+      server: {
+        baseDir: "./dist/",
+        serveStaticOptions: {
+            extensions: ["html"]
+        }
+    },
 		port: 4000,
 		notify: true
     });
     
-    gulp.watch("./src/index.html", gulp.parallel("copy-html"));
+    gulp.watch("./src/*.html", gulp.parallel("copy-html"));
     gulp.watch("./src/js/**/*.js", gulp.parallel("build-js"));
     gulp.watch("./src/sass/**/*.sass", gulp.parallel("build-sass"));
 });
