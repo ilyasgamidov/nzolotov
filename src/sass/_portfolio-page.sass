@@ -1,0 +1,107 @@
+.portfolio-tabs-wrap
+    border-bottom: 1px solid rgba(0, 0, 0, .2)
+    
+.main-tabs
+    display: flex
+    justify-content: space-between
+    width: 700px
+    margin: 30px auto 50px
+    font-weight: 700
+    &-item
+        color: #555
+        cursor: pointer
+        .text a
+            color: black
+            text-decoration: none
+            &:hover
+                color: #555
+    .active
+        color: #000
+        
+.second-tabs-luxury-item,
+.second-tabs-medium-item
+    cursor: pointer
+
+.second-tabs
+    display: flex
+    justify-content: space-between
+    width: 280px
+    text-transform: uppercase
+    font-size: 36px
+    font-weight: 700
+    color: #808080
+    margin: 0 auto
+    margin-bottom: 20px
+    &-item
+        cursor: pointer
+    .active-standart
+        color: black
+        border-bottom: 5px solid black
+.standart,
+.medium,
+.luxury
+    margin-bottom: 60px
+    .title-video
+        margin-top: 15px
+        font-size: 22px
+
+.portfolio-callback
+    margin: 80px 0 90px
+    h2
+        font-size: 26px
+        font-weight: 700
+        text-align: center
+        margin-bottom: 40px
+
+
+// colcade
+.portfolio-tabs-wrap
+    img 
+        width: 100%
+
+    .grid
+        display: flex
+    .grid-col
+        flex: 1
+        padding: 0 .1em
+
+    .grid-col--2, .grid-col--3 
+        display: none
+
+    .content 
+        position: absolute
+        background: rgba(0,0,0,.8)
+        color: white
+        margin-top: 1em
+        
+    @media (min-width: 768px) 
+        .container 
+            width: 90%
+        .grid-col--2,
+        .grid-col--3
+            display: block
+        .grid-col
+            padding: 0 .5em
+        img 
+            margin-bottom: .8em
+        
+        .content 
+            opacity: 0
+            transform: translateX(-.5em)
+            transition: all 2s
+            will-change: opacity, transform
+        .grid-item:hover 
+            cursor: pointer
+            .content 
+                opacity: 1
+                transform: translateX(0)
+        
+    @media (min-width: 1080px) 
+        .container 
+            width: 80%
+
+    
+
+    
+ 
+

@@ -20,10 +20,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                    <a class="nav-link active" href="#">О нас</a>
-                    <a class="nav-link" href="#">Цена</a>
-                    <a class="nav-link" href="#">Контакты</a>
-                    <a class="nav-link" href="#">Портфолио</a>
+                    <a class="nav-link" href="about.html">О нас</a>
+                    <a class="nav-link" href="price.html">Цена</a>
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                    <a class="nav-link" href="portfolio.html">Портфолио</a>
                     <div class="whatsapp-mobile">
                         <a href="tel:+7 495 769 86 17"><img class="mob-phone" src="img/phone.svg" alt=""></a>
                         <a href="https://api.whatsapp.com/send?phone=74957698617">
@@ -79,9 +79,9 @@
                 </div>
                 <div class="col-4">
                     <h2 class="h2-center">Свяжитесь с нами</h2>
-                    <form class="foto-form" action="">
-                        <input class=name type="text" placeholder="Имя">
-                        <input class=number type="text" placeholder="Ваш контактный номер">
+                    <form class="foto-form" action method="post" enctype=multipart/form-data>
+                        <input class="name" type="text" name="name" placeholder="Имя">
+                        <input class="number" type="text" name="user_phone" placeholder="Ваш контактный номер">
                         <button class="my-btn">Связаться</button>
                     </form>
                 </div>
@@ -160,7 +160,7 @@
             </div>
         </div>
     </section>
-
+ 
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -169,10 +169,10 @@
                 </div>
                 <div class="col-sm-3">
                     <ul class="footer-nav">
-                        <li class="footer-nav-link"><a href="">о нас</a></li>
-                        <li class="footer-nav-link"><a href="">цена</a></li>
-                        <li class="footer-nav-link"><a href="">контакты</a></li>
-                        <li class="footer-nav-link"><a href="">портфолио</a></li>
+                        <li class="footer-nav-link"><a href="about.html">о нас</a></li>
+                        <li class="footer-nav-link"><a href="price.html">цена</a></li>
+                        <li class="footer-nav-link"><a href="contacts.html">контакты</a></li>
+                        <li class="footer-nav-link"><a href="portfolio.html">портфолио</a></li>
                     </ul>
                 </div>
             </div>
