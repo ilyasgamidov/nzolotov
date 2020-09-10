@@ -84,10 +84,9 @@
   width: 450px;
   margin: 0 auto;
   padding: 30px;
-  padding-top: 0;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 3px solid rgba(255, 255, 255, .6);
-  border-top: none;
 }
 .packs-descr-border .title{
   font-size: 36px;

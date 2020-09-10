@@ -1869,8 +1869,8 @@ window.addEventListener('DOMContentLoaded', () => {
   tabs('.standart-tabs', '.second-tabs-item', '.standart', 'active-standart');
   tabs('.medium-tabs', '.second-tabs-medium-item', '.medium', 'active-standart');
   tabs('.luxury-tabs', '.second-tabs-luxury-item', '.luxury', 'active-standart');
-  images('.portfolio');
-  images('.about-backStage');
+  images('.portfolio'); // images('.about-backStage');
+
   images('.medium-foto');
   images('.standart');
   images('.luxury');
@@ -2044,6 +2044,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   forms();
+  lightGallery(document.getElementById('lightgallery'));
 });
 
 /***/ })

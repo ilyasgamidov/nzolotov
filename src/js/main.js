@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
     tabs('.luxury-tabs', '.second-tabs-luxury-item', '.luxury', 'active-standart');
 
     images('.portfolio');
-    images('.about-backStage');
+    // images('.about-backStage');
     images('.medium-foto');
     images('.standart');
     images('.luxury');
@@ -293,4 +293,6 @@ window.addEventListener('DOMContentLoaded', () => {
           };
           
           forms();
+
+          lightGallery(document.getElementById('lightgallery'));
 });

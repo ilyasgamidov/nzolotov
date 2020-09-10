@@ -3,7 +3,49 @@
         font-size: 26px
         font-weight: 700
         text-align: center
+        margin-bottom: 20px
     img
         max-width: 100%
         display: block
-        margin-top: 30px
+.about-backStage-wrap
+    display: flex
+    flex-wrap: wrap
+    img
+        max-width: 100%
+        display: block
+    a
+        width: 32%
+        margin: 5px
+
+.lg-prev
+    background: url("img/left.svg") center center no-repeat
+    opacity: .8
+    width: 30px
+    height: 30px
+.lg-next
+    background: url("img/right.svg") center center no-repeat
+    opacity: .8
+    width: 30px
+    height: 30px
+.lg-toolbar .lg-icon
+    background: url("img/close.svg") no-repeat
+    opacity: .5
+    width: 20px
+    height: 20px
+    margin-right: 20px
+    margin-top: 20px
+#lg-counter
+    display: none
+#lg-download
+    display: none
+.lg-toolbar .lg-close:after
+    display: none
+.lg-actions .lg-next:before
+    display: none
+.lg-actions .lg-prev:after
+    display: none
+
+.lg-actions .lg-next, .lg-actions .lg-prev
+    width: 36px
+    height: 36px
+    background-color: rgba(255, 255, 255, .4)
