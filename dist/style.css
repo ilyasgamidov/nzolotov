@@ -63,7 +63,7 @@
 
 .first {
   position: relative;
-  height: 500px;
+  height: auto;
   font-size: 100px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.5); }
@@ -81,7 +81,6 @@
 
 @media (max-width: 767px) {
   .first {
-    height: 350px;
     font-size: 50px; } }
 
 @media (max-width: 575px) {
@@ -140,6 +139,8 @@
   position: absolute;
   filter: grayscale(0.3) contrast(0.5);
   overflow: hidden; }
+  #video-bg video {
+    width: 3000px; }
 
 .foto-form {
   display: flex;
